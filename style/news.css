@@ -1,0 +1,53 @@
+@import url(index.css);
+
+
+/* Redefinindo grid */
+
+#grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas: 
+  "menu"
+  "pageNews"
+  "footer"
+  ;
+}
+
+.pageNews{
+  grid-area: pageNews;
+}
+
+
+/* Estilização */
+
+.pageNews{
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-row-gap: 64px;
+}
+
+.pageNews figure{
+  width: 100%;
+  grid-column: 1 / 4;
+  box-shadow: var(--shadowBox);
+}
+
+.pageNews figure img{
+  max-width: 100%;
+}
+
+.pageNews .textNews{
+  grid-column: 2 / 3;
+}
+
+.pageNews .textNews h1{
+  font-size: 3rem;
+  margin-bottom: 32px;
+}
+
+.pageNews .textNews p{
+  line-height: 180%;
+}
