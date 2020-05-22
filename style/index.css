@@ -5,7 +5,7 @@
   --textColor: #202020;
   --titleFont: 'IBM Plex Mono', monospace;
   --textFont: 'Lato', sans-serif;
-  --shadowBox: 2px 6px 16px rgba(0, 0, 0, 0.2);
+  --shadowBox: 2px 6px 16px rgba(0, 0, 0, 0.15);
 }
 *{
   margin: 0;
@@ -203,4 +203,22 @@ footer{
 footer p{
   padding: 8px;
   color: #fff;
+}
+
+
+/* Animações */
+
+.anime{
+  animation: fade .5s forwards ease-out;
+}
+
+@keyframes fade{
+  from{
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

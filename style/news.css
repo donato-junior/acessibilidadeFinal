@@ -1,4 +1,4 @@
-@import url(index.css);
+@import "index.css";
 
 
 /* Redefinindo grid */
@@ -46,6 +46,11 @@
 .pageNews .textNews h1{
   font-size: 3rem;
   margin-bottom: 32px;
+}
+
+.pageNews .textNews h4{
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--textColor);
 }
 
 .pageNews .textNews p{
