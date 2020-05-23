@@ -56,3 +56,13 @@
 .pageNews .textNews p{
   line-height: 180%;
 }
+
+@media (max-width: 800px){
+  .pageNews{
+    grid-template-columns: 1fr;
+  }
+
+  .pageNews .textNews{
+    grid-column: 1 / 4;
+  }
+}
