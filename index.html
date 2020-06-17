@@ -4,25 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EAD de qualidade 🙏</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/menu.css"/>
+    <link rel="stylesheet" href="style/contrast.css"/>
   </head>
   <body>
     <main id="grid">
       <nav class="menu">
+        <div class="nav-background">
+          <div class="nav-container">
+            <header class="nav-header">
+              <h1><a href="index.html" class="logo">Acessibilidade</a></h1>
+              <div id="nav-menu-bt"><div class="ico1"></div><div class="ico2"></div><div class="ico3"></div></div>
+            </header>
+              <ul class="nav-ul hide-ul">
+                <!-- <li><a class="nav-link active-link" href="#">Home</a></li> -->
+                <li><a class="nav-link" href="tecnologia-assistiva.html">Tecnologia Assistiva</a></li>
+                <li><a class="nav-link" href="implementacao.html">A Implementação</a></li>
+                <li><a class="nav-link" href="exemplos.html">Exemplos</a></li>
+                <li></li>
+                  <button class="bt-aumentarFont" name="aumentar-font" id="aumentar-font" title="Aumentar fonte [+]" alt="Aumentar fonte [+]">+</button>
+                  <button class="bt-diminuirFont" name="diminuir-font" id="diminuir-font" title="Diminuir fonte [-]" alt="Diminuir fonte [-]">-</button>
+                  <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">
+                  <img class="bt-contraste" src="img/ico-contraste.svg" title="Aumentar Contraste [Alt+3]" alt="Aumentar Contraste [Alt+3]"></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="menu">
         <h1><a href="index.html" class="logo">Acessibilidade</a></h1>
         <ul class="menu-buttons">
           <li><a href="news1.html">Noticia 1</a></li>
           <li><a href="news2.html">Noticia 2</a></li>
           <li><a href="news3.html">Noticia 3</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <section class="mainNews anime">
         <img src="http://www.fillmurray.com/g/1200/700" alt="Legenda a ser colocada">
         <div class="mainText">
-          <h1>Título da notícia</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat esse iste dicta dolores nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, dolorem?</p>
-          <a href="news1.html" class="btn-readMore">Ler mais</a>
+          <h1><a href=""></a>Tecnologia Assistiva</h1>
+          <p>Para uma educação à distância, os softwares ajudam muito. Há também diversas técnicas como a CAA (comunicação alternativa ou amentativa) 
+            para alunos com problemas de atenção, fala e escrita. O primeiro passo é entender a dificuldade do aluno, traçando um plano de ação para 
+            incluir ele em atividades. Além disso, a parceria entre a instituição e a família é importante para o aprendizado...<br />
+            <strong>(continue lendo)</strong></p>
+          <a href="tecnologia-assistiva.html" class="btn-readMore">Ler mais</a>
         </div>
       </section>
 
@@ -31,18 +58,18 @@
         <aside class="secondaryNews first">
           <img src="http://www.fillmurray.com/g/550/150" alt="Legenda a ser colocada">
           <div class="secondaryText">
-            <h2>Manchete</h2>
-            <p>Lorem ipsum dolor sit amet...</p>
-            <a href="news3.html">Ler mais</a>
+            <h2>Implementação</h2>
+            <p>A implementação é fácil, qualquer recurso que ajude a melhorar as capacidades funcionais das pessoas com deficiência pode ser utilizado.</p>
+            <a href="implementacao.html">Ler mais</a>
           </div>
         </aside>
   
         <aside class="secondaryNews second">
           <img src="http://www.fillmurray.com/g/550/150" alt="Legenda a ser colocada">
           <div class="secondaryText">
-            <h2>Manchete</h2>
-            <p>Lorem ipsum dolor sit amet...</p>
-            <a href="news3.html">Ler mais</a>
+            <h2>Exemplos de Softwares</h2>
+            <p>Confira alguns exemplos de softwares que podem ser utilizados para ajudar o educador e aluno...</p>
+            <a href="exemplos.html">Ler mais</a>
           </div>
         </aside>
       </div>
@@ -50,5 +77,7 @@
       <footer><p>Alguns direitos reservados - 2020</p></footer>
     </main> 
   </body>
+  <script src="script/jquery-3.2.1.min.js" defer></script>
+  <script src="script/high-contrast.js" defer></script>
   <script src="script/script.js" defer></script>
 </html>

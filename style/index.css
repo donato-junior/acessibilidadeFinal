@@ -67,22 +67,17 @@ footer{
 
 .menu{
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 10%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--mainColor);
 }
 .menu .logo{
   box-sizing: border-box;
   padding: 16px;
   transition: all .3s;
   text-transform: uppercase;
-  background-color: #fff;
-  color: var(--mainColor);
+  /* background-color: #fff; */
+  color: #f1f1f1;
 }
 .menu h1 a:hover{
-  color: #fff;
+  color: #f1f1f17c;
   background-color: unset;
 }
 .menu-buttons{
@@ -105,8 +100,6 @@ footer{
 .menu-buttons li{
   border-right: 2px solid white;
 }
-
-
 
 
 /* mainNews */
@@ -159,9 +152,6 @@ footer{
   color: #fff;
 }
 
-
-
-
 /* Secondary News */
 .wrap-secondary{
   display: grid;
@@ -200,9 +190,6 @@ footer{
   font-size: .8rem;
 }
 
-
-
-
 /* Footer */
 footer{
   background-color: var(--mainColor);
@@ -216,13 +203,11 @@ footer p{
   color: #fff;
 }
 
-
 /* Animações */
 
 .anime{
   animation: fade .5s forwards ease-out;
 }
-
 @keyframes fade{
   from{
     transform: translateX(-30px);
@@ -234,21 +219,20 @@ footer p{
   }
 }
 
-
 @media (max-width: 800px){
   p{
     font-size: 0.9rem;
   }
   #grid{
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 75% 100% 10%;
+    grid-template-rows: 10% 80% 100% 10%;
     grid-template-areas: 
     "menu"
     "mainNews"
     "secondary"
     "footer"
     ;
-    grid-row-gap: 80px;
+    grid-row-gap: 0.6rem;
   }
 
   .menu .logo{
@@ -256,7 +240,7 @@ footer p{
     height: 100%;
     background-color: unset;
     color: #fff;
-    padding: 16px 0;
+    padding: 14px 0;
   }
 
   .menu-buttons{
@@ -265,7 +249,7 @@ footer p{
 
   .mainNews{
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 20% 48%;
   }
   .mainText{
     grid-gap: 16px;
@@ -275,7 +259,7 @@ footer p{
     max-width: 100%;
   }
   .mainNews .mainText h1{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .btn-readMore{
     width: 80px;
