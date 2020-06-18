@@ -72,6 +72,8 @@ nav {height: 80px;}
 }
 /* Mobile Menu */
 @media screen and (max-width: 700px) {
+  .bt-contraste {height: 1.1rem; margin: 1rem 0 -0.2rem 0rem; }
+  .bt-aumentarFont, .bt-diminuirFont {margin: 1rem 0 1rem 0.5rem;} 
   .nav-container {
     flex-direction: column;
     text-align: center;

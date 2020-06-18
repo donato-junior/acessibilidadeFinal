@@ -1,0 +1,15 @@
+<svg width="3500" height="3500" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="3502" height="3502" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse fill="#1f2c3a" stroke-width="null" stroke-opacity="null" cx="1749.999963" cy="1749.99995" id="svg_2" rx="1749.999937" ry="1760.000109" stroke="null"/>
+  <ellipse fill="#6e7276" stroke="null" stroke-width="null" stroke-opacity="null" fill-opacity="null" cx="1750" cy="1750" id="svg_3" rx="20" ry="5"/>
+  <ellipse fill="#ffffff" stroke-width="null" stroke-opacity="null" cx="1750.000035" cy="1750.000035" id="svg_4" rx="1460.000035" ry="1460.000035" stroke="null"/>
+  <ellipse fill="#1f2c3a" stroke-width="null" stroke-opacity="null" cx="1750.00004" cy="1749.999948" id="svg_5" rx="1330.000079" ry="1297.102535" stroke="null"/>
+  <text fill="#ffffff" stroke-width="99" stroke-opacity="null" x="1308.904658" y="1762.985133" id="svg_6" font-size="250" font-family="'Courier New', Courier, monospace" text-anchor="start" xml:space="preserve" transform="matrix(12.363617762303393,0,0,12.08881877047255,-15374.550152913775,-18759.076922690645) " stroke="null" font-weight="normal">A</text>
+ </g>
+</svg>

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root{
   --mainColor: #1f2c3a;
   --boxBorder: 2px solid #35613e20;
   --textColor: #202020;
-  --titleFont: 'IBM Plex Mono', monospace;
+  /* --titleFont: 'IBM Plex Mono', monospace; */
+  --titleFont: 'Roboto Slab', monospace;
   --textFont: 'Lato', sans-serif;
   --shadowBox: 2px 6px 16px rgba(27, 27, 27, 0.1);
 }
@@ -32,9 +34,7 @@ a, p{
   color: var(--textColor);
 }
 
-
 /* Definindo o grid */
-
 #grid{
   height: 100%;
   width: 100%;
@@ -64,7 +64,6 @@ footer{
 }
 
 /* Menu */
-
 .menu{
   display: flex;
 }
@@ -101,9 +100,8 @@ footer{
   border-right: 2px solid white;
 }
 
-
 /* mainNews */
- 
+
 .mainNews{
   display: grid;
   grid-column-gap: 4px;
@@ -202,6 +200,7 @@ footer p{
   padding: 8px;
   color: #fff;
 }
+footer a {color: #fff; font-weight: bold;}
 
 /* Animações */
 

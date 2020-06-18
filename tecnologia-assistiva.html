@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Como Fazer uma educação EAD de qualidade 🙏</title>
+    <title>Tecnologia Assistiva</title>
+    <link rel="icon" type="image/svg" href="img/favicon.svg" />
     <link rel="stylesheet" href="style/menu.css"/>
     <link rel="stylesheet" href="style/news.css"/>
+    <link rel="stylesheet" href="style/contrast.css"/>
   </head>
   <body>
     <main id="grid">
@@ -13,14 +15,25 @@
         <div class="nav-background">
           <div class="nav-container">
             <header class="nav-header">
-              <h1><a href="index.html" class="logo">Acessibilidade</a></h1>
+              <h1><a class="logo" data-message="Esse é do primeiro botão do menu" tabindex="0"  
+                title="Página principal" href="index.html">Acessibilidade</a></h1>
               <div id="nav-menu-bt"><div class="ico1"></div><div class="ico2"></div><div class="ico3"></div></div>
             </header>
               <ul class="nav-ul hide-ul">
-                <!-- <li><a class="nav-link active-link" href="#">Home</a></li> -->
-                <li><a class="nav-link" href="tecnologia-assistiva.html">Tecnologia Assistiva</a></li>
-                <li><a class="nav-link" href="implementacao.html">A Implementação</a></li>
-                <li><a class="nav-link" href="exemplos.html">Exemplos</a></li>
+                <li><a class="nav-link" data-message="Esse é do segundo botão do menu" tabindex="0" 
+                  href="tecnologia-assistiva.html" title="Saiba mais sobre Tecnologia Assistiva ">Tecnologia Assistiva</a></li>
+
+                <li><a class="nav-link" data-message="Esse é do terceiro botão do menu" tabindex="0" 
+                  href="implementacao.html" title="Entenda como funciona a implementação">A Implementação</a></li>
+
+                <li><a class="nav-link" data-message="Esse é do quarto botão do menu" tabindex="0" 
+                  href="exemplos.html" title="Veja alguns exemplos">Exemplos</a></li>
+                <li></li>
+                  <button class="bt-aumentarFont" name="aumentar-font" id="aumentar-font" title="Aumentar fonte [+]" alt="Aumentar fonte [+]">+</button>
+                  <button class="bt-diminuirFont" name="diminuir-font" id="diminuir-font" title="Diminuir fonte [-]" alt="Diminuir fonte [-]">-</button>
+                  <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">
+                  <img class="bt-contraste" src="img/ico-contraste.svg" title="Aumentar Contraste [Alt+3]" alt="Aumentar Contraste [Alt+3]"></a>
+                </li>
               </ul>
           </div>
         </div>
@@ -28,7 +41,8 @@
 
       <section class="pageNews anime">
         <figure>
-          <img src="http://www.fillmurray.com/g/1100/300" alt="A colocar" />
+          <img src="./img/tecnologia-assistiva.png" alt="Diversos icones de acessibilidade, montados em um mosaico de icones"
+          title="Você está na página do artigo tecnologia assistiva" />
         </figure>
         <div class="textNews">
           <h1>Tecnologia Assistiva</h1>
@@ -48,9 +62,9 @@
         </div>
       </section>
 
-      <footer><p>Alguns direitos reservados - 2020</p></footer>
+      <footer><p>Alguns direitos reservados - 2020 / <a href="./sitemap.html" title="Mapa do Site">Mapa do Site</a></p></footer>
     </main>
   </body>
+  <script src="script/high-contrast.js" defer></script>
   <script src="script/script.js" defer></script>
-  <script src="script/menu.js" defer></script>
 </html>
